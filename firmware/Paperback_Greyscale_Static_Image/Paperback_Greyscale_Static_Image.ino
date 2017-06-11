@@ -2,7 +2,7 @@
  *
  * Write an image into a header file using a 3...2...1...0 format per pixel,
  * for 4 bits color (16 colors - well, greys.) MSB first.  At 80 MHz, screen
- * clears execute in 1.075 seconds and images are drawn in 1.144 seconds.
+ * clears execute in 1.075 seconds and images are drawn in 1.531 seconds.
  */
 #include "image.hpp"
 #include "Paperback.hpp"
@@ -26,7 +26,7 @@ enum ScreenState {
 Paperback *EPD;
 
 /* Contrast cycles in order of contrast (Darkest first).  */
-const uint8_t contrast_cycles[] = {4, 1, 1, 1};
+const uint8_t contrast_cycles[] = {4, 2, 2, 1};
 const uint8_t sz_contrast_cycles = sizeof(contrast_cycles)/sizeof(uint8_t);
 
 /* Screen clearing state */
@@ -170,6 +170,6 @@ void loop()
         EPD->poweroff();
 
         // Wait 5 seconds then do it again
-        delay(5000);
+        delay(7500);
         Serial.println("Going active again.");
 }
