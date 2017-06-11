@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Python
+env
+*.env
+/env
+*pyc
