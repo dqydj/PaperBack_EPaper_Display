@@ -7,12 +7,12 @@
 #define SMPS_CTRL GPIO_NUM_26  // Active LOW
 
 /* Control Lines */
-#define GMODE     GPIO_NUM_32
-#define SPH       GPIO_NUM_12
 #define CKV       GPIO_NUM_23
 #define SPV       GPIO_NUM_22
-#define RL        GPIO_NUM_21
-#define SHR       GPIO_NUM_0
+#define GMODE     GPIO_NUM_0
+#define SPH       GPIO_NUM_21
+//#define RL        GPIO_NUM_ // Undefined in v2
+//#define SHR       GPIO_NUM_ // Undefined in v2
 #define OE        GPIO_NUM_2
 
 /* Edges */
@@ -28,6 +28,9 @@
 #define D2        GPIO_NUM_14
 #define D1        GPIO_NUM_16
 #define D0        GPIO_NUM_4
+
+/* V2 Does not Define GMODE and RL */
+
 
 class Paperback
 {

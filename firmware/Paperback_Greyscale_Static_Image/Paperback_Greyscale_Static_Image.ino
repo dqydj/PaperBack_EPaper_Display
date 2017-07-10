@@ -5,6 +5,7 @@
  * clears execute in 1.075 seconds and images are drawn in 1.531 seconds.
  */
 #include "image.hpp"
+//#include "beat.hpp"
 #include "Paperback.hpp"
 
 /* Screen Constants */
@@ -12,7 +13,7 @@
 #define EPD_HEIGHT    600
 #define CLK_DELAY_US  0
 #define VCLK_DELAY_US 0
-#define OUTPUT_TIME   0
+#define OUTPUT_TIME   2
 #define CLEAR_BYTE    0B10101010
 #define DARK_BYTE     0B01010101
 
@@ -26,7 +27,7 @@ enum ScreenState {
 Paperback *EPD;
 
 /* Contrast cycles in order of contrast (Darkest first).  */
-const uint8_t contrast_cycles[] = {4, 2, 2, 1};
+const uint8_t contrast_cycles[] = {3, 2, 1, 1};
 const uint8_t sz_contrast_cycles = sizeof(contrast_cycles)/sizeof(uint8_t);
 
 /* Screen clearing state */

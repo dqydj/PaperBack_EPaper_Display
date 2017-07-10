@@ -45,10 +45,6 @@ void Paperback::init_gpios()
         digitalWrite(CKV, LOW);
         pinMode(SPV, OUTPUT);
         digitalWrite(SPV, LOW);
-        pinMode(RL, OUTPUT);
-        digitalWrite(RL, HIGH);
-        pinMode(SHR, OUTPUT);
-        digitalWrite(SHR, HIGH);
         pinMode(OE, OUTPUT);
         digitalWrite(OE, LOW);
 
@@ -173,7 +169,7 @@ void Paperback::vscan_start()
 void Paperback::vscan_end()
 {
         // VSCANEND
-        data_output(0B11111111);
+        data_output(0B00000000);
         hscan_start();
         for (int j = 0; j < 200; ++j) {
                 gpio_set_hi(CL);
@@ -201,9 +197,9 @@ void Paperback::vscan_end()
         delayMicroseconds(1);
         gpio_set_lo(CKV);
         gpio_set_lo(OE);
-        delayMicroseconds(150);
+        delayMicroseconds(50);
         gpio_set_hi(CKV);
-        delayMicroseconds(200);
+        delayMicroseconds(50);
         gpio_set_lo(CKV);
         delayMicroseconds(1);
         gpio_set_lo(GMODE);
@@ -299,7 +295,7 @@ uint8_t Paperback::pixel_to_epd_cmd(const uint8_t& pixel)
 {
         switch (pixel) {
                 case 1:
-                        return 0B00000011;
+                        return 0B00000010;
                 case 0:
                         return 0B00000001;
                 default:
