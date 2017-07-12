@@ -1,0 +1,58 @@
+Reference, Value, Footprint
+U2,MAX1555,TO_SOT_Packages_SMD:SOT-23-5_HandSoldering
+D3,LED,LEDs:LED_0805
+R11,1K,Resistors_SMD:R_0805_HandSoldering
+SINGLE_CELL_LITHIUM1,Battery_Cell,PK_Footprints:JST_Right_Angle_02x01
+C12,1uF,Capacitors_SMD:C_0603_HandSoldering
+R12,10k,Resistors_SMD:R_0805_HandSoldering
+F1,.75A,Resistors_SMD:R_1210_HandSoldering
+D5,D_Schottky,PK_Footprints:D_SOD-123F
+J2,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
+C6,4.7uF,Capacitors_SMD:C_0603_HandSoldering
+C7,4.7uF,Capacitors_SMD:C_0603_HandSoldering
+L1,22uH,PK_Footprints:DG6050C_Murata_Inductor
+L2,22uH,PK_Footprints:DG6050C_Murata_Inductor
+C3,4.7pF >22V,Capacitors_SMD:C_0603_HandSoldering
+R8,120k >22V,Resistors_SMD:R_0805_HandSoldering
+R7,2M >22V,Resistors_SMD:R_0805_HandSoldering
+D1,D_Schottky,PK_Footprints:D_SOD-123F
+C4,1uF >22V,Capacitors_SMD:C_0603_HandSoldering
+U5,LM7915CT,TO_SOT_Packages_SMD:TO-252-3_TabPin2
+C10,1uF > 15V,Capacitors_SMD:C_0603_HandSoldering
+C8,.33uF > 20V,Capacitors_SMD:C_0603_HandSoldering
+U6,LM7815CT,TO_SOT_Packages_SMD:TO-252-3_TabPin2
+C9,.33uF > 22V,Capacitors_SMD:C_0603_HandSoldering
+C11,1uF > 15V,Capacitors_SMD:C_0603_HandSoldering
+R3,10k,Resistors_SMD:R_0805_HandSoldering
+R1,10k,Resistors_SMD:R_0805_HandSoldering
+R2,10k,Resistors_SMD:R_0805_HandSoldering
+U3,LM358,Housings_DIP:DIP-8_W7.62mm
+R9,200K,Resistors_SMD:R_0805_HandSoldering
+RV1,100k,PK_Footprints:CB10V_Trimmer
+R10,39k,Resistors_SMD:R_0805_HandSoldering
+R4,39k,Resistors_SMD:R_0805_HandSoldering
+JP1,Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
+J5,CONN_02X12,Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm
+U7,ESP32_Core_Board_V2,PK_Footprints:ESP32_Core_Board_v2
+JP2,Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
+J4,CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm
+U4,PAM3110BLA330RDICT,TO_SOT_Packages_SMD:TO-252-3_TabPin2
+J1,BARREL_JACK,PK_Footprints:Switchcraft_5.5_2.1_Barrel_Jack
+R13,1k,Resistors_SMD:R_0805_HandSoldering
+D6,LED,LEDs:LED_0805
+C13,4.7uF,Capacitors_SMD:C_0603_HandSoldering
+U1,LT1945,Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm
+SW1,SW_DPDT_x2,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm
+D4,D_Schottky,PK_Footprints:D_SOD-123F
+D2,D_Schottky,PK_Footprints:D_SOD-123F
+C2,100pF,Capacitors_SMD:C_0603_HandSoldering
+R5,560k > 20V,Resistors_SMD:R_0805_HandSoldering
+R6,39k > 20V,Resistors_SMD:R_0805_HandSoldering
+C5,1uF >20V,Capacitors_SMD:C_0603_HandSoldering
+C1,.1uF,Capacitors_SMD:C_0603_HandSoldering
+Q1,IRLML6402,TO_SOT_Packages_SMD:SOT-23
+Q2,IRLML6402,TO_SOT_Packages_SMD:SOT-23
+J6,ED060SC4,PK_Footprints:ED060SC4
+J3,CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm
+R15,560k,Resistors_SMD:R_0805_HandSoldering
+R14,180k,Resistors_SMD:R_0805_HandSoldering
