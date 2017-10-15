@@ -32,14 +32,14 @@ Switch 3 (Furthest from Microcontroller)
 Switch 2
 Switch 1 (Closest to Microcontroller)
 
-On  On  On  - 16 color, ~10 seconds between frames
-On  On  Off - 16 color, ~5 seconds between frames
-On  Off On  - 4 color, ~10 seconds between frames
-On  Off Off - 4 color, ~5 seconds between frames
-Off On  On  - 4 color, ~1 frame per second
-Off On  Off - 2 color, ~10 seconds between frames
-Off Off On  - 2 color, ~5 seconds between frames
-Off Off Off - 2 color, ~1 frame per second
+* On  On  On  - 16 color, ~10 seconds between frames
+* On  On  Off - 16 color, ~5 seconds between frames
+* On  Off On  - 4 color, ~10 seconds between frames
+* On  Off Off - 4 color, ~5 seconds between frames
+* Off On  On  - 4 color, ~1 frame per second
+* Off On  Off - 2 color, ~10 seconds between frames
+* Off Off On  - 2 color, ~5 seconds between frames
+* Off Off Off - 2 color, ~1 frame per second
 
 ### ESP32 Dev Board Driven
 
