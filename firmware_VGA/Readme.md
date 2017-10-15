@@ -19,7 +19,7 @@ There are two devices you will need to program:
         * "TWI_BUFFER_LENGTH" in "arduino_install_folder/hardware/arduino/avr/libraries/Wire/src/utility/twi.h"
     * Install Tod E. Kurt's Soft I2C Master
         * https://github.com/todbot/SoftI2CMaster
-    * The ICSP pins are next to the microcontroller - use a 3.3V programmer, or set the switch to 'disconnected' and power the board externally.
+    * The ICSP pins are next to the microcontroller - use a 3.3V programmer, or set the switch to 'disconnected' and power the board externally. The switch will turn off 
 
 All code I wrote (the VHDL + a couple lines of C++) is Licensed MIT. 
 
