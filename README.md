@@ -27,6 +27,20 @@ Unplug any ESP32 from the socket and attach both boards, then attach power (see 
 
 All firmware is in the /firmware_VGA/FPGA and /firmware_VGA/Microcontroller directories.
 
+The user switches change color depth (read: shades of gray. 2 color is black & white.) and refresh speed:
+Switch 3 (Furthest from Microcontroller)
+Switch 2
+Switch 1 (Closest to Microcontroller)
+
+On  On  On  - 16 color, ~10 seconds between frames
+On  On  Off - 16 color, ~5 seconds between frames
+On  Off On  - 4 color, ~10 seconds between frames
+On  Off Off - 4 color, ~5 seconds between frames
+Off On  On  - 4 color, ~1 frame per second
+Off On  Off - 2 color, ~10 seconds between frames
+Off Off On  - 2 color, ~5 seconds between frames
+Off Off Off - 2 color, ~1 frame per second
+
 ### ESP32 Dev Board Driven
 
 Remove the second PCB if attached, then add the ESP32. There are *easy* ways to add power (there are pins exposed too, but these are easiest). Unless using Lithium and the DC adapter, only use one at a time!
