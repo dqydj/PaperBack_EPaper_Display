@@ -27,7 +27,7 @@ enum ScreenState {
 Paperback *EPD;
 
 /* Contrast cycles in order of contrast (Darkest first).  */
-const uint8_t contrast_cycles[] = {3, 2, 1, 1};
+const uint8_t contrast_cycles[] = {2,2,1,1};
 const uint8_t sz_contrast_cycles = sizeof(contrast_cycles)/sizeof(uint8_t);
 
 /* Screen clearing state */

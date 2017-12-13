@@ -85,7 +85,14 @@ def main(argv=None):
         for k in range(0, im.size[0]):
             r, g, b = im.getpixel((k, i))
             avg_bright = ((r + g + b) // 3)
-            stripped = avg_bright & 0B11110000
+            #stripped = avg_bright & 0B11110000
+
+            reversed_upper = (0B00010000 & avg_bright) << 3
+            reversed_upper |= (0B00100000 & avg_bright) << 1
+            reversed_upper |= (0B01000000 & avg_bright) >> 1
+            reversed_upper |= (0B10000000 & avg_bright) >> 3
+            stripped = reversed_upper
+
             color_byte.append("{0:04b}".format(stripped >> 4))
 
             stripped = avg_bright & 0B11110000
